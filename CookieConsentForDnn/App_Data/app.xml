@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="14.08.00" ExportDate="2022-09-27T10:38:59.813914+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="15.06.00" ExportDate="2023-04-08T18:24:29.5259189+01:00">
   <Header>
     <App Guid="cabb2ac2-dc4a-4140-8744-a447e106b4a7" />
     <Language Default="pt-pt" />
@@ -9,7 +9,7 @@
     </Dimensions>
   </Header>
   <AttributeSets>
-    <AttributeSet StaticName="App-Resources" Name="App-Resources" Description="Stores resources like translations for an app" Scope="System.App" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="App-Resources" Name="App-Resources" Scope="System.App" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="BottomCookieBarText" Type="Empty" IsTitle="false">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="d0631fe8-69b9-4ebc-bafd-fe7e04073f75" Json="True" KeyNumber="1106">
@@ -108,7 +108,7 @@
             <Value Key="InputFontFamily" Value="" Type="String">
               <Dimension DimensionID="4" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="4" Type="Number">
+            <Value Key="RowCount" Value="4.0" Type="Number">
               <Dimension DimensionID="4" ReadOnly="false" />
             </Value>
           </Entity>
@@ -136,7 +136,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="System.App" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="App-Settings" Name="App-Settings" Scope="System.App" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="GlobalSettings" Type="Empty" IsTitle="false">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="be4bad67-be01-48d6-8f01-1a9e6fdf64b5" Json="True" KeyNumber="1203">
@@ -315,7 +315,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="7509c018-3ad8-4b64-8317-a053eff1327c" Name="CookieItems" Description="" Scope="Default" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="7509c018-3ad8-4b64-8317-a053eff1327c" Name="CookieItems" Scope="Default" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="CookieName" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f7a80335-c175-4571-8016-620a90c4f1a0" Json="True" KeyNumber="1077">
@@ -442,7 +442,7 @@
             <Value Key="InputFontFamily" Value="" Type="String">
               <Dimension DimensionID="4" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="5" Type="Number">
+            <Value Key="RowCount" Value="5.0" Type="Number">
               <Dimension DimensionID="4" ReadOnly="false" />
             </Value>
           </Entity>
@@ -495,14 +495,14 @@
             <Value Key="InputFontFamily" Value="" Type="String">
               <Dimension DimensionID="4" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="5" Type="Number">
+            <Value Key="RowCount" Value="5.0" Type="Number">
               <Dimension DimensionID="4" ReadOnly="false" />
             </Value>
           </Entity>
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="01ec30b7-b2ab-47f2-ac28-82ae31ad7607" Name="CookieTypes" Description="" Scope="Default" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="01ec30b7-b2ab-47f2-ac28-82ae31ad7607" Name="CookieTypes" Scope="Default" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="GroupName" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4b6c7fc3-b249-4752-8f95-4a18458610eb" Json="True" KeyNumber="1070">
@@ -640,7 +640,7 @@
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="00.00.13" Type="String">
+      <Value Key="Version" Value="0.01" Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
     </Entity>
@@ -654,7 +654,7 @@
       <Value Key="CloseModalButtonClasses" Value="btn-primary" Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
-      <Value Key="ConsentMode" Value="bar" Type="String">
+      <Value Key="ConsentMode" Value="modal" Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
       <Value Key="CookieIcon" Value="file:210" Type="Hyperlink">
@@ -731,7 +731,7 @@
       <Value Key="ShowMoreText" Value="Ver opções" Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
-      <Value Key="ShowMoreText" Value="See option" Type="String">
+      <Value Key="ShowMoreText" Value="See options" Type="String">
         <Dimension DimensionID="3" ReadOnly="false" />
       </Value>
     </Entity>
@@ -950,7 +950,10 @@
       <Value Key="CookieName" Value="DNNPersonalization" Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
-      <Value Key="CookieType" Value="ae3d7cc7-263b-4032-a5f8-f40bf15f7df4" Type="Entity" />
+      <Value Key="CookieType" Value="c15e920b-f317-4f3a-8147-1ae2f9d051a6" Type="Entity" />
+      <Value Key="CustomCodeToDisable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
       <Value Key="CustomCodeToEnable" Value="" Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
@@ -974,7 +977,10 @@
       <Value Key="CookieName" Value="authentication" Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
-      <Value Key="CookieType" Value="ae3d7cc7-263b-4032-a5f8-f40bf15f7df4" Type="Entity" />
+      <Value Key="CookieType" Value="c15e920b-f317-4f3a-8147-1ae2f9d051a6" Type="Entity" />
+      <Value Key="CustomCodeToDisable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
       <Value Key="CustomCodeToEnable" Value="" Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
@@ -986,7 +992,10 @@
       <Value Key="CookieName" Value="dnn_IsMobile&#x9;" Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
-      <Value Key="CookieType" Value="ae3d7cc7-263b-4032-a5f8-f40bf15f7df4" Type="Entity" />
+      <Value Key="CookieType" Value="c15e920b-f317-4f3a-8147-1ae2f9d051a6" Type="Entity" />
+      <Value Key="CustomCodeToDisable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
       <Value Key="CustomCodeToEnable" Value="" Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
@@ -998,7 +1007,10 @@
       <Value Key="CookieName" Value="LastPageId" Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
-      <Value Key="CookieType" Value="ae3d7cc7-263b-4032-a5f8-f40bf15f7df4" Type="Entity" />
+      <Value Key="CookieType" Value="c15e920b-f317-4f3a-8147-1ae2f9d051a6" Type="Entity" />
+      <Value Key="CustomCodeToDisable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
       <Value Key="CustomCodeToEnable" Value="" Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
@@ -1022,16 +1034,22 @@
       <Value Key="CookieName" Value="DotNetNukeAnonymous" Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
-      <Value Key="CookieType" Value="ae3d7cc7-263b-4032-a5f8-f40bf15f7df4" Type="Entity" />
+      <Value Key="CookieType" Value="c15e920b-f317-4f3a-8147-1ae2f9d051a6" Type="Entity" />
+      <Value Key="CustomCodeToDisable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
       <Value Key="CustomCodeToEnable" Value="" Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="b3233a0a-2dab-4f30-9a11-75b4556833b7">
-      <Value Key="CookieDesc" Value="abc" Type="String">
+      <Value Key="CookieDesc" Value="Mais um serviço que um cookie, mas decidimos informa-lo que utilizamos esta funcionalidade." Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
-      <Value Key="CookieName" Value="GoogleAnalytics(this and that)" Type="String">
+      <Value Key="CookieDesc" Value="More a service than a cookie, but we decided to inform you that we use this feature." Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value="GoogleAnalytics" Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
       <Value Key="CookieType" Value="efc12613-3a80-4f86-a996-23e7d05d4ee9" Type="Entity" />
@@ -1043,14 +1061,107 @@
       </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="0b860d06-4493-44d5-a26b-cc8057fd44a5">
-      <Value Key="CookieDesc" Value="asd" Type="String">
+      <Value Key="CookieDesc" Value="Mais um serviço que um cookie, mas decidimos informa-lo que utilizamos esta funcionalidade." Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
-      <Value Key="CookieName" Value="GoogleTagManager(this and that)" Type="String">
+      <Value Key="CookieDesc" Value="More a service than a cookie, but we decided to inform you that we use this feature." Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value="GoogleTagManager" Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
       <Value Key="CookieType" Value="efc12613-3a80-4f86-a996-23e7d05d4ee9" Type="Entity" />
+      <Value Key="CustomCodeToDisable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
       <Value Key="CustomCodeToEnable" Value="console.log(&quot;GoogleTagManagercode is running&quot;);" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="dc55529d-e922-48aa-a078-7e021151b239">
+      <Value Key="CookieDesc" Value="Guarda a informação sobre a sua autorização para utilizar cookies." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieDesc" Value="Stores information about your authorization to use cookies." Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value="cookieOptionSaved" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieType" Value="c15e920b-f317-4f3a-8147-1ae2f9d051a6" Type="Entity" />
+      <Value Key="CustomCodeToDisable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CustomCodeToEnable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="8fe7d0e8-b083-457c-a808-354b2c2c69a4">
+      <Value Key="CookieDesc" Value="Guarda informação sobre a sua autorização para utilizar cookies funcionais." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieDesc" Value="Stores information about your authorization to use functional cookies." Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value="functional_cookies" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieType" Value="c15e920b-f317-4f3a-8147-1ae2f9d051a6" Type="Entity" />
+      <Value Key="CustomCodeToDisable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CustomCodeToEnable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="6dbd02e6-b793-455c-8568-9db64b10d5c2">
+      <Value Key="CookieDesc" Value="Guarda informação sobre a sua autorização para utilizar cookies essenciais." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieDesc" Value="Stores information about your authorization to use essential cookies." Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value="necessary_cookies" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieType" Value="c15e920b-f317-4f3a-8147-1ae2f9d051a6" Type="Entity" />
+      <Value Key="CustomCodeToDisable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CustomCodeToEnable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="059e149e-af52-41ea-8762-5100da0fb220">
+      <Value Key="CookieDesc" Value="Stores information about your authorization to use performance cookies." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value="performance_cookies" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieType" Value="c15e920b-f317-4f3a-8147-1ae2f9d051a6" Type="Entity" />
+      <Value Key="CustomCodeToDisable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CustomCodeToEnable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="7509c018-3ad8-4b64-8317-a053eff1327c" AttributeSetName="CookieItems" EntityGUID="df1a4f22-c7db-4dab-b009-6d994c6085c8">
+      <Value Key="CookieDesc" Value="Guarda informação sobre a sua autorização para utilizar cookies publicitários." Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieDesc" Value="Stores information about your authorization to use advertising cookies." Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieName" Value="targeting_cookies" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CookieType" Value="c15e920b-f317-4f3a-8147-1ae2f9d051a6" Type="Entity" />
+      <Value Key="CustomCodeToDisable" Value="" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="CustomCodeToEnable" Value="" Type="String">
         <Dimension DimensionID="4" ReadOnly="false" />
       </Value>
     </Entity>
