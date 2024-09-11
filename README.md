@@ -1,4 +1,7 @@
 # GDPR-cookie-consent-for-2sxc-and-DNN
+Will be upgrading this app as needed to support additional features for Consent Mode V2.
+
+#Below is original repository readme.
 This is a very basic 2sxc app to be injected in the footer of your theme so that it loads the modals and bar for the cookie consent module.
 
 How to setup:
